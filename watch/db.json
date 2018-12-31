@@ -1,36 +1,4 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "name": "sdf",
-      "email": "sdf",
-      "id": 2
-    },
-    {
-      "name": "sdffsdf",
-      "email": "sdfsdfsdf",
-      "id": 3
-    },
-    {
-      "name": "sdffsdf",
-      "email": "sdfsdfsdf",
-      "id": 4
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
   "users": [
     {
       "id": "1",
