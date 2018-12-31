@@ -6,7 +6,7 @@ In the State Management In Angular using NGXS of this series I covered the basic
 NGXS takes a similar approach to the manner in which React Redux deals with external system calls by placing them inline in the Action function.
 
 ## Development server
-
+Run [npm i --save]
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Get a full fake REST API with zero coding
@@ -16,6 +16,6 @@ npm install -g json-server
 
 In Watch Directory run command
 Start JSON Server
-json-server --watch db.json
+[json-server --watch db.json]
 
 Now if you go to http://localhost:3000/users, you'll get response
