@@ -12,7 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Get a full fake REST API with zero coding
 
 Install JSON Server
-npm install -g json-server
+[npm install -g json-server]
 
 In Watch Directory run command
 Start JSON Server
