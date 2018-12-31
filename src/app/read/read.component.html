@@ -1,0 +1,28 @@
+<br /><br />
+<div *ngIf="(loading | async) === false">
+  <div *ngIf="data">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of (data | async); index as i">
+          <td (click)="deleteApiData(user.id)">{{ user.id }}</td>
+          <td (click)="delData(user.name)">{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <button (click)="deleteApiData(user.id)" class="btn btn-danger">
+              Remove Data
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div *ngIf="(loading$ | async) === true">Loading.....</div>

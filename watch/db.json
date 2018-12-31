@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "sdf",
+      "email": "sdf",
+      "id": 2
+    },
+    {
+      "name": "sdffsdf",
+      "email": "sdfsdfsdf",
+      "id": 3
+    },
+    {
+      "name": "sdffsdf",
+      "email": "sdfsdfsdf",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "1",
+      "name": "new 1",
+      "email": "newtest1@test.in"
+    },
+    {
+      "id": "2",
+      "name": "new test",
+      "email": "nt@test,in"
+    },
+    {
+      "id": "3",
+      "name": "fa icon",
+      "email": "ficon@con.on"
+    },
+    {
+      "id": "4",
+      "name": "sdf",
+      "email": "sdf@asda"
+    },
+    {
+      "id": "5",
+      "name": "final test",
+      "email": "ft@success.in"
+    }
+  ]
+}
