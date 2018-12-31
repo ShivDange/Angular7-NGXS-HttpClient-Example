@@ -12,8 +12,7 @@ import { LernState } from "../store/lern.state";
 })
 export class ReadComponent implements OnInit, OnDestroy {
   dataSubscription: Subscription;
-  // data: Observable<User>;
-
+ 
   @Select(LernState.getUsers) data: Observable<User[]>;
   @Select(LernState.getUsers) httpData: Observable<User[]>;
   @Select(LernState.loading) loading: Observable<boolean>;
@@ -25,18 +24,15 @@ export class ReadComponent implements OnInit, OnDestroy {
   }
 
   deleteApiData(id) {
-    console.log("user id -->", id);
-    this.store.dispatch(new DeleteData(id));
+     this.store.dispatch(new DeleteData(id));
   }
 
   ngOnInit() {
-    // this.data = this.store.select(state => state.uses.users);
-    // console.log("data", this.data.subscribe.length);
-
+    
     this.dataSubscription = this.data.subscribe(
       data => {
         if (data[0] !== undefined) {
-          console.log("subscribe fun data name -=-=>", data.length);
+          console.log("subscribe fun data length -=-=>", data.length);
         } else {
           console.log("subscribe fun all data -=-=>", data);
         }
